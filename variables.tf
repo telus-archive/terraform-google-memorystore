@@ -1,6 +1,6 @@
 variable "region" {
   description = "gcp region to use"
-  default     = "useast-1"
+  default     = "us-east-1"
 }
 
 variable "project" {
