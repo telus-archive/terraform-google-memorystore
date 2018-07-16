@@ -2,11 +2,6 @@ provider "google" {
   region = "${var.region}"
 }
 
-resource "google_compute_network" "default" {
-  project = "${var.project}"
-  name    = "${var.network_name}"
-}
-
 resource "google_redis_instance" "default" {
   project        = "${var.project}"
   name           = "${var.name}"
@@ -17,7 +12,7 @@ resource "google_redis_instance" "default" {
   location_id             = "${var.location_id}"
   alternative_location_id = "${var.alternative_location_id}"
 
-  authorized_network = "${google_compute_network.default.self_link}"
+  authorized_network = "${var.authorized_network}"
 
   redis_version     = "${var.redis_version}"
   display_name      = "${var.display_name}"

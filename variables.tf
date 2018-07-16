@@ -11,8 +11,8 @@ variable "name" {
   description = "name of the memorystore instance"
 }
 
-variable "network_name" {
-  description = "name of the memorystore instance"
+variable "authorized_network" {
+  description = "name of the memorystore authorized network"
   default = "default"
 }
 
