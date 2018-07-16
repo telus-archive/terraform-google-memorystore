@@ -23,7 +23,7 @@ variable "tier" {
 
 variable "memory_size_gb" {
   description = "memory size in GiB"
-  value = "1"
+  default = 1
 }
 
 variable "location_id" {
