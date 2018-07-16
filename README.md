@@ -25,7 +25,9 @@ Defaults:
 
 # Module Outputs
 
-* `instance_id` - The memorystore instance id
+* `id` - The Memorystore instance id
+* `host` - The IP address of the instance
+* `region` - The region the instance lives in
 
 # Usage
 
