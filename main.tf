@@ -1,6 +1,6 @@
-provider "google" {
-  region = "${var.region}"
-}
+//provider "google" {
+//  region = "${var.region}"
+//}
 
 resource "google_redis_instance" "default" {
   project        = "${var.project}"
